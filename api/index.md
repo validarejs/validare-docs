@@ -11,7 +11,11 @@ Creates a Validare instance with all built-in validators pre-registered.
 ```ts
 import { validare } from 'validare';
 
-const fv = validare(form: HTMLFormElement, options: ValidareOptions): Core
+// Signature
+function validare(form: HTMLFormElement, options: ValidareOptions): Core
+
+// Usage
+const fv = validare(document.getElementById('myForm') as HTMLFormElement, options);
 ```
 
 ### `ValidareOptions`
