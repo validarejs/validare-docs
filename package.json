@@ -1,0 +1,17 @@
+{
+  "name": "validare-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13",
+    "codemirror": "^6.0.1",
+    "@codemirror/lang-javascript": "^6.2.3",
+    "@codemirror/theme-one-dark": "^6.1.2"
+  }
+}

@@ -1,0 +1,9 @@
+/* Minimal overrides — VitePress default theme handles everything else */
+:root {
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Playground container spacing */
+.vp-playground {
+  margin: 1.5rem 0;
+}
