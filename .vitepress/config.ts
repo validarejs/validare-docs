@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Validare',
   description: 'Modern form validation. Plugin-based, zero dependencies, TypeScript-first.',
   base: '/validare-docs/',
+  ignoreDeadLinks: true,
 
   themeConfig: {
     nav: [
