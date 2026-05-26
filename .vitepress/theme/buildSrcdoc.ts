@@ -8,9 +8,10 @@
 const CLOSE_SCRIPT = '<' + '/script>'
 
 export function buildSrcdoc(validareSource: string, userCode: string): string {
-  // Escape </script> inside validareSource to avoid premature end-of-script
-  // in the iframe HTML parser.
+  // Escape </script> inside validareSource and userCode to avoid premature
+  // end-of-script in the iframe HTML parser.
   const safeSource = validareSource.replace(/<\/script>/gi, '<\\/script>')
+  const safeUser   = userCode.replace(/<\/script>/gi, '<\\/script>')
 
   return `<!DOCTYPE html>
 <html>
@@ -42,7 +43,7 @@ window.onerror=function(m,s,l,c,e){
   parent.postMessage({type:'pg-error',msg:String(e||m)},'*');
   return true;
 };
-try{${userCode}}catch(e){parent.postMessage({type:'pg-error',msg:String(e)},'*');}
+try{${safeUser}}catch(e){parent.postMessage({type:'pg-error',msg:String(e)},'*');}
 ${CLOSE_SCRIPT}
 </body>
 </html>`

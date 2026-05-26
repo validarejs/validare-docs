@@ -45,6 +45,7 @@ function reset() {
 }
 
 function onMessage(e: MessageEvent) {
+  if (e.origin !== 'null') return
   if (e.data?.type === 'pg-error') error.value = e.data.msg
 }
 
@@ -60,6 +61,7 @@ onMounted(async () => {
   }
 
   // 2. Create CodeMirror editor
+  if (!editorEl.value) return
   view = new EditorView({
     doc: props.code,
     extensions: [
@@ -73,7 +75,7 @@ onMounted(async () => {
         timer = setTimeout(() => render(code), 300)
       }),
     ],
-    parent: editorEl.value!,
+    parent: editorEl.value,
   })
 
   // 3. Initial render
