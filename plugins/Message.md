@@ -12,6 +12,7 @@ Displays validation error messages in the DOM next to each field.
 |---|---|---|---|
 | `container` | `string` | `undefined` | CSS selector for a single container to display all messages. Without this, a `<div>` is inserted after each field. |
 | `clazz` | `string` | `"fv-plugins-message-container"` | CSS class applied to each message container element |
+| `first` | `boolean` | `false` | When `true`, only the first error message is shown per field |
 
 ## Playground
 
@@ -43,3 +44,4 @@ validare(document.getElementById('demo'), {
 - Without `container`, a `<div class="fv-plugins-message-container">` is inserted immediately after each validated field element.
 - With `container: '#errors'`, per-field message divs are inserted inside that container instead of after each field element.
 - On `uninstall()` (e.g., `fv.destroy()`), all injected message elements are removed from the DOM.
+- Use `first: true` to show only the first error message per field (similar to Sequence, but at the display layer — all validators still run).

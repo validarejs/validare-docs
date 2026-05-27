@@ -50,3 +50,4 @@ validare(document.getElementById('demo'), {
 - Without `Sequence`, all validators run regardless of earlier failures.
 - Particularly useful to prevent unnecessary `remote` requests when basic format validation fails.
 - Uses the `field-should-validate` filter internally; compatible with `Excluded`.
+- On the first validation run (before any previous results exist), the `element-validated` filter ensures only the first failing validator's message is shown.
