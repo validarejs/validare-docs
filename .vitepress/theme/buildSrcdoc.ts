@@ -11,7 +11,13 @@ export function buildSrcdoc(validareSource: string, userCode: string): string {
   // Escape </script> inside validareSource and userCode to avoid premature
   // end-of-script in the iframe HTML parser.
   const safeSource = validareSource.replace(/<\/script>/gi, '<\\/script>')
-  const safeUser   = userCode.replace(/<\/script>/gi, '<\\/script>')
+  // Intercept the validare() call so the Core instance is stored in window.__fv,
+  // enabling the submit handler below to call fv.validate() when the button is clicked.
+  const instrumentedCode = userCode.replace(
+    /\bvalidare\s*\(/,
+    'window.__fv = validare('
+  )
+  const safeUser = instrumentedCode.replace(/<\/script>/gi, '<\\/script>')
 
   return `<!DOCTYPE html>
 <html>
@@ -37,12 +43,18 @@ button[type=submit]:disabled{opacity:.6;cursor:not-allowed}
 </style>
 </head>
 <body>
-<script>(function(){${safeSource}})()${CLOSE_SCRIPT}
+<script>${safeSource}${CLOSE_SCRIPT}
 <script>
 window.onerror=function(m,s,l,c,e){
   parent.postMessage({type:'pg-error',msg:String(e||m)},'*');
   return true;
 };
+// Intercept form submit: prevent navigation (sandbox has no allow-forms)
+// and trigger programmatic validation via the stored Core instance.
+document.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(window.__fv) window.__fv.validate();
+},true);
 try{${safeUser}}catch(e){parent.postMessage({type:'pg-error',msg:String(e)},'*');}
 ${CLOSE_SCRIPT}
 </body>
