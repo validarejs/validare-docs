@@ -20,3 +20,11 @@ Plugins extend the Validare core engine. Pass them in the `plugins` option map.
 | [Bootstrap5](/plugins/Bootstrap5) | Applies Bootstrap 5 `is-valid` / `is-invalid` classes |
 | [Bulma](/plugins/Bulma) | Applies Bulma `is-success` / `is-danger` classes |
 | [Tailwind](/plugins/Tailwind) | Applies configurable Tailwind utility classes |
+
+## Utility Plugins
+
+| Plugin | Description |
+|---|---|
+| [Dependency](/plugins/Dependency) | Revalidates dependent fields when a primary field validates |
+| [StartEndDate](/plugins/StartEndDate) | Ensures start date ≤ end date across two fields |
+| [Transformer](/plugins/Transformer) | Transforms the value seen by a specific validator |

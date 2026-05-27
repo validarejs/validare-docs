@@ -144,6 +144,14 @@ export default defineConfig({
             { text: 'Tailwind',   link: '/plugins/Tailwind' },
           ],
         },
+        {
+          text: 'Utility Plugins (3)',
+          items: [
+            { text: 'Dependency',   link: '/plugins/Dependency' },
+            { text: 'StartEndDate', link: '/plugins/StartEndDate' },
+            { text: 'Transformer',  link: '/plugins/Transformer' },
+          ],
+        },
       ],
 
       '/api/': [
