@@ -147,11 +147,12 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Utility Plugins (3)',
+          text: 'Utility Plugins (4)',
           items: [
-            { text: 'Dependency',   link: '/plugins/Dependency' },
-            { text: 'StartEndDate', link: '/plugins/StartEndDate' },
-            { text: 'Transformer',  link: '/plugins/Transformer' },
+            { text: 'Dependency',       link: '/plugins/Dependency' },
+            { text: 'StartEndDate',     link: '/plugins/StartEndDate' },
+            { text: 'Transformer',      link: '/plugins/Transformer' },
+            { text: 'PasswordStrength', link: '/plugins/PasswordStrength' },
           ],
         },
       ],

@@ -30,3 +30,4 @@ Plugins extend the Validare core engine. Pass them in the `plugins` option map.
 | [Dependency](/plugins/Dependency) | Revalidates dependent fields when a primary field validates |
 | [StartEndDate](/plugins/StartEndDate) | Ensures start date ≤ end date across two fields |
 | [Transformer](/plugins/Transformer) | Transforms the value seen by a specific validator |
+| [PasswordStrength](./PasswordStrength.md) | Evaluates password strength with a 0–4 score and minimum threshold |
