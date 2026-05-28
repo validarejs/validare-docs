@@ -14,6 +14,7 @@ Plugins extend the Validare core engine. Pass them in the `plugins` option map.
 | [Sequence](/plugins/Sequence) | Stops validation at the first failing validator per field |
 | [Aria](./Aria.md) | Adds `aria-invalid` and `aria-describedby` for screen reader accessibility |
 | [AutoFocus](./AutoFocus.md) | Focuses the first invalid field automatically after form validation fails |
+| [Tooltip](./Tooltip.md) | Shows error messages in a floating tooltip on hover or click |
 
 ## CSS Framework Plugins
 
