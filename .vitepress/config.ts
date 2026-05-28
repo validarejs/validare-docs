@@ -12,7 +12,8 @@ export default defineConfig({
       { text: 'Validators',  link: '/validators/' },
       { text: 'Plugins',     link: '/plugins/' },
       { text: 'API',         link: '/api/' },
-      { text: 'Changelog',   link: '/changelog' },
+      { text: 'Changelog',    link: '/changelog' },
+      { text: 'Contributing', link: '/contributing' },
     ],
 
     sidebar: {
