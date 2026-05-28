@@ -126,7 +126,7 @@ export default defineConfig({
       '/plugins/': [
         { text: 'All Plugins', link: '/plugins/' },
         {
-          text: 'Core Plugins (6)',
+          text: 'Core Plugins (7)',
           items: [
             { text: 'Trigger',      link: '/plugins/Trigger' },
             { text: 'Message',      link: '/plugins/Message' },
@@ -134,6 +134,7 @@ export default defineConfig({
             { text: 'SubmitButton', link: '/plugins/SubmitButton' },
             { text: 'Excluded',     link: '/plugins/Excluded' },
             { text: 'Sequence',     link: '/plugins/Sequence' },
+            { text: 'Aria',         link: '/plugins/Aria' },
           ],
         },
         {

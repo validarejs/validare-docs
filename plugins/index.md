@@ -12,6 +12,7 @@ Plugins extend the Validare core engine. Pass them in the `plugins` option map.
 | [SubmitButton](/plugins/SubmitButton) | Disables the submit button during validation |
 | [Excluded](/plugins/Excluded) | Skips disabled, hidden, or invisible fields |
 | [Sequence](/plugins/Sequence) | Stops validation at the first failing validator per field |
+| [Aria](./Aria.md) | Adds `aria-invalid` and `aria-describedby` for screen reader accessibility |
 
 ## CSS Framework Plugins
 
