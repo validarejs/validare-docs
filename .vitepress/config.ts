@@ -126,7 +126,7 @@ export default defineConfig({
       '/plugins/': [
         { text: 'All Plugins', link: '/plugins/' },
         {
-          text: 'Core Plugins (7)',
+          text: 'Core Plugins (8)',
           items: [
             { text: 'Trigger',      link: '/plugins/Trigger' },
             { text: 'Message',      link: '/plugins/Message' },
@@ -135,6 +135,7 @@ export default defineConfig({
             { text: 'Excluded',     link: '/plugins/Excluded' },
             { text: 'Sequence',     link: '/plugins/Sequence' },
             { text: 'Aria',         link: '/plugins/Aria' },
+            { text: 'AutoFocus',    link: '/plugins/AutoFocus' },
           ],
         },
         {

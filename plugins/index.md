@@ -13,6 +13,7 @@ Plugins extend the Validare core engine. Pass them in the `plugins` option map.
 | [Excluded](/plugins/Excluded) | Skips disabled, hidden, or invisible fields |
 | [Sequence](/plugins/Sequence) | Stops validation at the first failing validator per field |
 | [Aria](./Aria.md) | Adds `aria-invalid` and `aria-describedby` for screen reader accessibility |
+| [AutoFocus](./AutoFocus.md) | Focuses the first invalid field automatically after form validation fails |
 
 ## CSS Framework Plugins
 
