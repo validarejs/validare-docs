@@ -17,6 +17,7 @@ Plugins extend the Validare core engine. Pass them in the `plugins` option map.
 | [Tooltip](./Tooltip.md) | Shows error messages in a floating tooltip on hover or click |
 | [DefaultSubmit](./DefaultSubmit.md) | Automatically submits the form when all fields are valid |
 | [FieldStatus](./FieldStatus.md) | Tracks per-field validation status and fires a callback on change |
+| [Declarative](./Declarative.md) | Configure validators via HTML `data-fv-*` attributes, no JavaScript needed |
 
 ## CSS Framework Plugins
 
