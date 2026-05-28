@@ -16,6 +16,7 @@ Plugins extend the Validare core engine. Pass them in the `plugins` option map.
 | [AutoFocus](./AutoFocus.md) | Focuses the first invalid field automatically after form validation fails |
 | [Tooltip](./Tooltip.md) | Shows error messages in a floating tooltip on hover or click |
 | [DefaultSubmit](./DefaultSubmit.md) | Automatically submits the form when all fields are valid |
+| [FieldStatus](./FieldStatus.md) | Tracks per-field validation status and fires a callback on change |
 
 ## CSS Framework Plugins
 

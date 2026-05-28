@@ -127,7 +127,7 @@ export default defineConfig({
       '/plugins/': [
         { text: 'All Plugins', link: '/plugins/' },
         {
-          text: 'Core Plugins (10)',
+          text: 'Core Plugins (11)',
           items: [
             { text: 'Trigger',      link: '/plugins/Trigger' },
             { text: 'Message',      link: '/plugins/Message' },
@@ -139,6 +139,7 @@ export default defineConfig({
             { text: 'AutoFocus',    link: '/plugins/AutoFocus' },
             { text: 'Tooltip',        link: '/plugins/Tooltip' },
             { text: 'DefaultSubmit', link: '/plugins/DefaultSubmit' },
+            { text: 'FieldStatus',   link: '/plugins/FieldStatus' },
           ],
         },
         {
