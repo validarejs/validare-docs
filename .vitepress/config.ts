@@ -23,6 +23,7 @@ export default defineConfig({
             { text: 'Using Plugins',      link: '/guide/plugins' },
             { text: 'Localization',       link: '/guide/localization' },
             { text: 'Custom Validators',  link: '/guide/custom-validators' },
+            { text: 'Multi-Step Forms',   link: '/guide/multi-step-forms' },
           ],
         },
       ],
