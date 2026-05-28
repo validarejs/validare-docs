@@ -28,24 +28,21 @@ document.body.innerHTML = \`
     </div>
     <button type="button" id="btn">Validate</button>
   </form>
-  <style>
-    .fv-plugins-tooltip {
-      position: absolute;
-      z-index: 9999;
-      background: #1e293b;
-      color: #fff;
-      font-size: 12px;
-      padding: 5px 10px;
-      border-radius: 4px;
-      pointer-events: none;
-      white-space: nowrap;
-      display: none;
-    }
-    .fv-plugins-tooltip--show { display: block; }
-    .fv-plugins-tooltip--top { margin-top: -4px; transform: translateY(-100%); }
-    .fv-plugins-tooltip--bottom { margin-top: 4px; }
-  </style>
 \`;
+const css = document.createElement('style');
+css.textContent = \`
+  .fv-plugins-tooltip {
+    position: absolute; z-index: 9999;
+    background: #1e293b; color: #fff;
+    font-size: 12px; padding: 5px 10px;
+    border-radius: 4px; pointer-events: none;
+    white-space: nowrap; display: none;
+  }
+  .fv-plugins-tooltip--show { display: block; }
+  .fv-plugins-tooltip--top { margin-top: -4px; transform: translateY(-100%); }
+  .fv-plugins-tooltip--bottom { margin-top: 4px; }
+\`;
+document.head.appendChild(css);
 const { validare, Tooltip } = Validare;
 const fv = validare(document.getElementById('demo'), {
   fields: {
