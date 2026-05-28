@@ -145,15 +145,7 @@ const fv = validare(document.getElementById('demo'), {
 });
 document.getElementById('btn').addEventListener('click', () => fv.validate());
 `.trim()
-</script>
 
-<ValidarePlayground :code="codeBasic" />
-
-## Playground — html5Input
-
-Use native HTML5 attributes — zero custom `data-fv-*` needed.
-
-<script setup>
 const codeHtml5 = `
 document.body.innerHTML = \`
   <form id="demo2" novalidate>
@@ -192,15 +184,7 @@ const fv = validare(document.getElementById('demo2'), {
 });
 document.getElementById('btn2').addEventListener('click', () => fv.validate());
 `.trim()
-</script>
 
-<ValidarePlayground :code="codeHtml5" />
-
-## Playground — Mixed: declarative + programmatic
-
-Programmatic validators always take precedence. Use declarative for markup-friendly options (messages, constraints) and programmatic for logic-heavy validators (callback, remote).
-
-<script setup>
 const codeMixed = `
 document.body.innerHTML = \`
   <form id="demo3" novalidate>
@@ -250,6 +234,18 @@ const fv = validare(document.getElementById('demo3'), {
 document.getElementById('btn3').addEventListener('click', () => fv.validate());
 `.trim()
 </script>
+
+<ValidarePlayground :code="codeBasic" />
+
+## Playground — html5Input
+
+Use native HTML5 attributes — zero custom `data-fv-*` needed.
+
+<ValidarePlayground :code="codeHtml5" />
+
+## Playground — Mixed: declarative + programmatic
+
+Programmatic validators always take precedence. Use declarative for markup-friendly options (messages, constraints) and programmatic for logic-heavy validators (callback, remote).
 
 <ValidarePlayground :code="codeMixed" />
 
