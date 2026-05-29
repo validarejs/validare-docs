@@ -1,13 +1,14 @@
 # Validators
 
-Validare ships 50 built-in validators across 7 categories.
+Validare ships 51 built-in validators across 7 categories.
 All validators pass on empty string — combine with [`notEmpty`](/validators/notEmpty) to require a value.
 
-## Core (22)
+## Core (23)
 
 | Validator | Description |
 |---|---|
 | [notEmpty](/validators/notEmpty) | Not empty (supports `trim`) |
+| [blank](/validators/blank) | Empty (opposite of `notEmpty`, supports `trim`) |
 | [email](/validators/email) | Valid email address |
 | [creditCard](/validators/creditCard) | Credit card number (Luhn check) |
 | [date](/validators/date) | Date in a specified format |

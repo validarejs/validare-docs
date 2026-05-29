@@ -33,10 +33,11 @@ export default defineConfig({
       '/validators/': [
         { text: 'All Validators', link: '/validators/' },
         {
-          text: 'Core (22)',
+          text: 'Core (23)',
           collapsed: false,
           items: [
             { text: 'notEmpty',      link: '/validators/notEmpty' },
+            { text: 'blank',         link: '/validators/blank' },
             { text: 'email',         link: '/validators/email' },
             { text: 'creditCard',    link: '/validators/creditCard' },
             { text: 'date',          link: '/validators/date' },
