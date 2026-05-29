@@ -46,8 +46,27 @@ validare(document.getElementById('demo'), {
 
 <ValidarePlayground :code="code" height="320px" />
 
+## Debouncing
+
+Use `delay` to avoid validating on every keystroke — the timer resets with each event and validation only fires after the user stops typing:
+
+```js
+new Trigger({ event: 'input', delay: 300 })
+```
+
+You can combine different events and a delay:
+
+```js
+new Trigger({
+  event: { email: 'blur', username: 'input' },
+  delay: 400,   // applies to all fields
+})
+```
+
+`blur` events rarely need a delay — validation on blur fires once when the user leaves the field. Debounce is most useful with `input` and `change`.
+
 ## Notes
 
 - Without `Trigger`, validation only runs when you call `fv.validate()` or `fv.validateField()` manually.
-- `delay` debounces the handler — useful for fields like `remote` that make network requests.
 - Events are attached on `core.field.added` and cleaned up on `core.field.removed`.
+- For remote validators that make network requests, always set a `delay` to avoid a request per keystroke.
