@@ -124,7 +124,10 @@ fv.off(event: string, handler: (payload: unknown) => void): Core
 | `core.field.added` | `{ field, elements, options }` | `addField()` |
 | `core.field.removed` | `{ field, elements, options }` | `removeField()` |
 | `core.field.validating` | `{ field }` | Before a field validates |
-| `core.field.validated` | `{ field, result, elements }` | After a field validates |
+| `core.field.validated` | `{ field, result, elements }` | After a field validates (any result) |
+| `core.field.valid` | `{ field, elements }` | After a field validates — result is `Valid` |
+| `core.field.invalid` | `{ field, elements }` | After a field validates — result is `Invalid` |
+| `core.field.notvalidated` | `{ field, elements }` | After a field validates — result is `NotValidated` |
 | `core.element.validated` | `ElementValidatedPayload` | After each DOM element validates |
 | `core.validator.validated` | `{ field, validator, result }` | After each validator runs |
 
