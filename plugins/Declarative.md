@@ -329,3 +329,5 @@ validare(document.getElementById('signup'), {
 - **Custom prefix.** If `data-fv-` conflicts with other libraries, change it: `new Declarative({ prefix: 'data-val-' })` and use `data-val-not-empty="true"` instead.
 
 - **`html5Input` adds validators, not replaces.** You can combine HTML5 attributes with `data-fv-*` on the same element — both are merged.
+
+- **`callback` validator requires a function reference — not a string name.** The Declarative plugin reads attribute values as strings and cannot resolve a function by name at runtime. `data-fv-callback___callback="myFunction"` will **not** work because the `callback` validator expects a function object, not a string. Use the mixed declarative + programmatic pattern instead: declare simple validators (notEmpty, stringLength, …) in attributes and register the `callback` validator via the `fields` option in JavaScript. See the [Mixed playground](#playground-mixed-declarative-programmatic) above for an example.
