@@ -26,6 +26,7 @@ export default defineConfig({
             { text: 'Localization',       link: '/guide/localization' },
             { text: 'Custom Validators',  link: '/guide/custom-validators' },
             { text: 'Multi-Step Forms',   link: '/guide/multi-step-forms' },
+            { text: 'Checkboxes & Radios', link: '/guide/checkboxes-radios' },
           ],
         },
       ],
