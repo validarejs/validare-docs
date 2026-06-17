@@ -174,7 +174,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/varantes/validare' },
+      { icon: 'github', link: 'https://github.com/validarejs/validare' },
     ],
 
     search: { provider: 'local' },
