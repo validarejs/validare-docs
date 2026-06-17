@@ -33,12 +33,12 @@ const code = `document.body.innerHTML = \`
     <div class="field">
       <label>Check-in date</label>
       <input type="date" name="checkin">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Check-out date</label>
       <input type="date" name="checkout">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

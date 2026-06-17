@@ -24,12 +24,12 @@ const code = `document.body.innerHTML = \`
         <option value="US">United States</option>
         <option value="BR">Brazil</option>
       </select>
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Postal Code (re-validates when country changes)</label>
       <input type="text" name="postal" placeholder="e.g. 90210 or 01310-100">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

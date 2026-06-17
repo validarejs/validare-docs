@@ -36,12 +36,12 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Name</label>
       <input type="text" name="name" placeholder="Your name">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Email</label>
       <input type="email" name="email" placeholder="user@example.com">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit" id="submit" disabled>Submit</button>
   </form>

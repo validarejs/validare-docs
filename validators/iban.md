@@ -23,7 +23,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>IBAN</label>
       <input type="text" name="val" placeholder="GB82 WEST 1234 5698 7654 32">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

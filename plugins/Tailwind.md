@@ -31,14 +31,14 @@ script.onload = () => {
       <input type="text" id="name" name="name"
              class="w-full border rounded px-3 py-2 text-sm"
              placeholder="Jane Doe">
-      <div class="fv-plugins-message-container text-red-600 text-xs mt-1"></div>
+      <div class="vd-plugins-message-container text-red-600 text-xs mt-1"></div>
     </div>
     <div class="mb-4">
       <label class="block font-medium mb-1" for="email">Email</label>
       <input type="email" id="email" name="email"
              class="w-full border rounded px-3 py-2 text-sm"
              placeholder="jane@example.com">
-      <div class="fv-plugins-message-container text-red-600 text-xs mt-1"></div>
+      <div class="vd-plugins-message-container text-red-600 text-xs mt-1"></div>
     </div>
     <button type="submit"
             class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">

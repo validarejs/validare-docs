@@ -22,7 +22,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>CSS color</label>
       <input type="text" name="val" placeholder="#ff5733">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

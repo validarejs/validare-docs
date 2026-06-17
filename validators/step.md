@@ -23,7 +23,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Multiple of 5</label>
       <input type="number" name="val" placeholder="0, 5, 10...">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

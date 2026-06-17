@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Hex number</label>
       <input type="text" name="val" placeholder="1a2b3c">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

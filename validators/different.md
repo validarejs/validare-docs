@@ -23,12 +23,12 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Username</label>
       <input type="text" name="username" placeholder="Username">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Email (must differ from username)</label>
       <input type="email" name="email" placeholder="Email">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

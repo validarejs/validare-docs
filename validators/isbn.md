@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>ISBN</label>
       <input type="text" name="val" placeholder="978-3-16-148410-0">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

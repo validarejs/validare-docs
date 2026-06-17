@@ -25,7 +25,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Image (JPG/PNG, max 2 MB)</label>
       <input type="file" name="val" accept=".jpg,.png">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

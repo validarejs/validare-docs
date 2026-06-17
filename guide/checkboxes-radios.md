@@ -11,7 +11,7 @@ Validate that the user selected one option using `notEmpty`:
   <label><input type="radio" name="gender" value="m"> Male</label>
   <label><input type="radio" name="gender" value="f"> Female</label>
   <label><input type="radio" name="gender" value="o"> Other</label>
-  <div class="fv-plugins-message-container"></div>
+  <div class="vd-plugins-message-container"></div>
 </form>
 ```
 
@@ -39,7 +39,7 @@ Use the `choice` validator with `min: 1`:
   <label><input type="checkbox" name="interests" value="sports"> Sports</label>
   <label><input type="checkbox" name="interests" value="music">  Music</label>
   <label><input type="checkbox" name="interests" value="travel"> Travel</label>
-  <div class="fv-plugins-message-container"></div>
+  <div class="vd-plugins-message-container"></div>
 </form>
 ```
 

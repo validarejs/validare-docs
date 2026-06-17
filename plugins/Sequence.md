@@ -20,7 +20,7 @@ const code = `document.body.innerHTML = \`
     <div class="field">
       <label>Email (stops at first error)</label>
       <input type="email" name="email" placeholder="user@example.com">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

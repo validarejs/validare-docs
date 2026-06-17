@@ -28,12 +28,12 @@ const code = `document.body.innerHTML = \`
     <div class="field">
       <label>Credit Card (spaces and dashes are stripped before validation)</label>
       <input type="text" name="cc" placeholder="4111 1111 1111 1111">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Phone (non-digits stripped before digits check)</label>
       <input type="text" name="phone" placeholder="(555) 123-4567">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

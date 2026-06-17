@@ -21,7 +21,7 @@ npm install validare
   <div>
     <label for="email">Email</label>
     <input type="email" id="email" name="email" />
-    <div class="fv-plugins-message-container"></div>
+    <div class="vd-plugins-message-container"></div>
   </div>
   <button type="submit">Submit</button>
 </form>

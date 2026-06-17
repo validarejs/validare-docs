@@ -21,12 +21,12 @@ const code = `document.body.innerHTML = \`
     <div class="field">
       <label>Email (validates on blur)</label>
       <input type="email" name="email" placeholder="user@example.com">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Username (validates on every keystroke)</label>
       <input type="text" name="username" placeholder="Type to validate live">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate all</button>
   </form>

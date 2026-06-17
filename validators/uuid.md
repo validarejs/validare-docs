@@ -22,7 +22,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>UUID</label>
       <input type="text" name="val" placeholder="550e8400-e29b-41d4-a716-446655440000">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

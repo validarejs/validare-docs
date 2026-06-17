@@ -23,7 +23,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Number (greater than 0)</label>
       <input type="number" name="val" placeholder="e.g. 5">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

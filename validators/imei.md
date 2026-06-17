@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>IMEI</label>
       <input type="text" name="val" placeholder="490154203237518">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

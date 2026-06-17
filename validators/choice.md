@@ -26,7 +26,7 @@ document.body.innerHTML = \`
       <label><input type="checkbox" name="val" value="music"> Music</label>
       <label><input type="checkbox" name="val" value="travel"> Travel</label>
       <label><input type="checkbox" name="val" value="food"> Food</label>
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </fieldset>
     <button type="submit">Validate</button>
   </form>

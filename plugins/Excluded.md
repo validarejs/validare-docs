@@ -20,13 +20,13 @@ const code = `document.body.innerHTML = \`
     <div class="field">
       <label>Visible field</label>
       <input type="text" name="visible" placeholder="This is validated">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <input type="hidden" name="hidden" value="">
     <div class="field">
       <label>Disabled field (skipped)</label>
       <input type="text" name="disabled" disabled placeholder="This is skipped">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

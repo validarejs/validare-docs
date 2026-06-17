@@ -23,7 +23,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Numeric</label>
       <input type="text" name="val" placeholder="3.14">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

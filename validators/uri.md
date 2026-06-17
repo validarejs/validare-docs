@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>URL</label>
       <input type="url" name="val" placeholder="https://example.com">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

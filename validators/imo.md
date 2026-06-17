@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>IMO number</label>
       <input type="text" name="val" placeholder="IMO 9074729">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

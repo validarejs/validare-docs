@@ -36,7 +36,7 @@ input[type=url],input[type=tel],input[type=file],select{
   border-radius:4px;font-size:14px}
 input.fv-valid{border-color:#198754}
 input.fv-invalid{border-color:#dc3545}
-.fv-plugins-message-container{color:#dc3545;font-size:.8125rem;margin-top:.25rem;min-height:1.2em}
+.vd-plugins-message-container{color:#dc3545;font-size:.8125rem;margin-top:.25rem;min-height:1.2em}
 button[type=submit]{padding:.375rem .75rem;background:#0d6efd;color:#fff;
   border:none;border-radius:4px;cursor:pointer;font-size:14px}
 button[type=submit]:disabled{opacity:.6;cursor:not-allowed}

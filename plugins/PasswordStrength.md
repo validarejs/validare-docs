@@ -34,7 +34,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Password</label>
       <input type="password" name="password" placeholder="Enter a password" autocomplete="new-password">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
       <div id="strength-bar" style="margin-top:6px;height:6px;border-radius:3px;background:#eee;overflow:hidden">
         <div id="strength-fill" style="height:100%;width:0;transition:width 0.3s,background 0.3s"></div>
       </div>

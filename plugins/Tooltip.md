@@ -31,16 +31,16 @@ document.body.innerHTML = \`
 \`;
 const css = document.createElement('style');
 css.textContent = \`
-  .fv-plugins-tooltip {
+  .vd-plugins-tooltip {
     position: absolute; z-index: 9999;
     background: #1e293b; color: #fff;
     font-size: 12px; padding: 5px 10px;
     border-radius: 4px; pointer-events: none;
     white-space: nowrap; display: none;
   }
-  .fv-plugins-tooltip--show { display: block; }
-  .fv-plugins-tooltip--top { margin-top: -4px; transform: translateY(-100%); }
-  .fv-plugins-tooltip--bottom { margin-top: 4px; }
+  .vd-plugins-tooltip--show { display: block; }
+  .vd-plugins-tooltip--top { margin-top: -4px; transform: translateY(-100%); }
+  .vd-plugins-tooltip--bottom { margin-top: 4px; }
 \`;
 document.head.appendChild(css);
 const { validare, Tooltip } = Validare;
@@ -67,7 +67,7 @@ document.getElementById('btn').addEventListener('click', () => fv.validate());
 ## Notes
 
 - Tooltip is an **alternative to `Message`** — use one or the other (both can coexist but it's unusual).
-- The plugin creates a single `div.fv-plugins-tooltip` in `document.body` and positions it using `getBoundingClientRect`.
-- Add CSS for `.fv-plugins-tooltip` and `.fv-plugins-tooltip--show` to control appearance (the plugin only handles visibility and position).
+- The plugin creates a single `div.vd-plugins-tooltip` in `document.body` and positions it using `getBoundingClientRect`.
+- Add CSS for `.vd-plugins-tooltip` and `.vd-plugins-tooltip--show` to control appearance (the plugin only handles visibility and position).
 - With `trigger: 'click'`, clicking the field shows the tooltip; clicking anywhere else hides it.
 - Use `Tooltip` alongside `Trigger` (with `event: 'input'`) for live feedback as the user types.

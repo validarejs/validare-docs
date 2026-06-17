@@ -22,7 +22,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>US phone</label>
       <input type="tel" name="val" placeholder="(201) 555-0123">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

@@ -22,7 +22,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Must be left empty</label>
       <input type="text" name="val" placeholder="Leave this blank">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

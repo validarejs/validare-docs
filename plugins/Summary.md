@@ -4,10 +4,10 @@ Renders a consolidated list of all form errors in a fixed container — useful f
 
 ## Markup
 
-Place a container element with the class `fv-plugins-summary` anywhere on the page — typically above the form:
+Place a container element with the class `vd-plugins-summary` anywhere on the page — typically above the form:
 
 ```html
-<div class="fv-plugins-summary"></div>
+<div class="vd-plugins-summary"></div>
 
 <form id="myForm" novalidate>
   ...
@@ -21,7 +21,7 @@ The summary appears when the form fails validation and clears automatically when
 | Option | Type | Default | Description |
 | --- | --- | --- | --- |
 | `enabled` | `boolean` | `true` | Enable or disable the plugin |
-| `container` | `string` | `".fv-plugins-summary"` | CSS selector for the summary container |
+| `container` | `string` | `".vd-plugins-summary"` | CSS selector for the summary container |
 | `renderTitle` | `() => string` | `"Please fix the following errors:"` | Title rendered above the list. Return `""` to omit. |
 | `renderItem` | `(field, message) => string` | `message` | Formats each error item. Receives the field name and message. |
 | `autoScroll` | `boolean` | `false` | Scrolls the container into view after rendering |
@@ -31,7 +31,7 @@ The summary appears when the form fails validation and clears automatically when
 <script setup>
 const code = `
 document.body.innerHTML = \`
-  <div class="fv-plugins-summary" style="
+  <div class="vd-plugins-summary" style="
     margin-bottom:12px; padding:12px 16px;
     background:#fef2f2; border:1px solid #fca5a5;
     border-radius:6px; color:#991b1b; display:none
@@ -40,24 +40,24 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Name</label>
       <input type="text" name="name" placeholder="Jane Doe">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Email</label>
       <input type="email" name="email" placeholder="jane@example.com">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Password (min 8 chars)</label>
       <input type="password" name="password" placeholder="••••••••">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="button" id="btn">Submit</button>
   </form>
 \`;
 
 // Show/hide the summary container based on content
-const summaryEl = document.querySelector('.fv-plugins-summary');
+const summaryEl = document.querySelector('.vd-plugins-summary');
 const observer = new MutationObserver(() => {
   summaryEl.style.display = summaryEl.innerHTML ? 'block' : 'none';
 });

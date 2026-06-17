@@ -20,12 +20,12 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Name</label>
       <input type="text" name="name" placeholder="Your name">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <div class="field">
       <label>Email</label>
       <input type="email" name="email" placeholder="user@example.com">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="button" id="btn">Validate</button>
     <p id="out" style="margin-top:8px;font-size:13px;color:#555;font-family:monospace"></p>

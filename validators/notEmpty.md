@@ -22,7 +22,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Full name</label>
       <input type="text" name="val" placeholder="Jane Doe">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

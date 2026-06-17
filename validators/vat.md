@@ -22,7 +22,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>VAT number (GB)</label>
       <input type="text" name="val" placeholder="GB123456789">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

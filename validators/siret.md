@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>SIRET</label>
       <input type="text" name="val" placeholder="55214450300135">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

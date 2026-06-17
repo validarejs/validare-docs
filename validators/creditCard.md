@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Card number</label>
       <input type="text" name="val" placeholder="4111 1111 1111 1111">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

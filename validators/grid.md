@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>GRId</label>
       <input type="text" name="val" placeholder="A1-2425G-ABC1234002-M">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

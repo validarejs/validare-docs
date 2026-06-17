@@ -18,8 +18,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and
 - **`core.validator.notvalidated` event** — Fired when a validator is skipped or its factory is not registered.
 - **`core.validator.enabled` / `core.validator.disabled` events** — Fired by `enableValidator()` and `disableValidator()` respectively.
 - **`blank` validator** — Validates that a field is empty. The opposite of `notEmpty`. Supports the same `trim` option.
-- **`CharCounter` plugin** — Displays a live character counter inside a `.fv-plugins-char-counter` container element. Updates on every keystroke and adds a configurable CSS class when the count exceeds `max`.
-- **`Summary` plugin** — Renders a consolidated list of all form errors inside a `.fv-plugins-summary` container. Clears automatically on `core.form.valid` and `core.form.reset`. Supports custom title, item renderer, and auto-scroll.
+- **`CharCounter` plugin** — Displays a live character counter inside a `.vd-plugins-char-counter` container element. Updates on every keystroke and adds a configurable CSS class when the count exceeds `max`.
+- **`Summary` plugin** — Renders a consolidated list of all form errors inside a `.vd-plugins-summary` container. Clears automatically on `core.form.valid` and `core.form.reset`. Supports custom title, item renderer, and auto-scroll.
 
 ---
 
@@ -33,7 +33,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and
 - **Tooltip plugin** — Displays validation error messages in a floating tooltip instead of an inline `<div>`. Supports `hover` (default) and `click` triggers and four placements (`top`, `bottom`, `left`, `right`).
 - **DefaultSubmit plugin** — Automatically calls `form.submit()` when all fields pass validation. Throws a clear error on install if any control named `name="submit"` would shadow the native method.
 - **FieldStatus plugin** — Tracks per-field validation status (`NotValidated`, `Validating`, `Valid`, `Invalid`) and fires an `onStatusChanged(boolean)` callback on every change. Exposes `getStatuses()` and `areFieldsValid()` methods.
-- **Declarative plugin** — Configures field validators entirely through HTML `data-fv-*` attributes — no `fields` option in JavaScript needed. Supports a `___` separator for validator options, a configurable `prefix`, an `html5Input` mode that maps native HTML5 attributes (`required`, `type`, `minlength`, `pattern`, `min`, `max`, …) to validators, and dynamic field detection via `core.field.added`.
+- **Declarative plugin** — Configures field validators entirely through HTML `data-vd-*` attributes — no `fields` option in JavaScript needed. Supports a `___` separator for validator options, a configurable `prefix`, an `html5Input` mode that maps native HTML5 attributes (`required`, `type`, `minlength`, `pattern`, `min`, `max`, …) to validators, and dynamic field detection via `core.field.added`.
 
 ### Fixed
 

@@ -23,7 +23,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>IP address</label>
       <input type="text" name="val" placeholder="192.168.1.1">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

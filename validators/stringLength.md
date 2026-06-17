@@ -24,7 +24,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Username (8–20 characters)</label>
       <input type="text" name="val" placeholder="myusername">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

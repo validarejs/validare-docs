@@ -21,7 +21,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>VIN (USA)</label>
       <input type="text" name="val" placeholder="1HGBH41JXMN109186">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>

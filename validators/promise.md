@@ -22,7 +22,7 @@ document.body.innerHTML = \`
     <div class="field">
       <label>Code (async check — valid if length > 3)</label>
       <input type="text" name="val" placeholder="e.g. ABCD">
-      <div class="fv-plugins-message-container"></div>
+      <div class="vd-plugins-message-container"></div>
     </div>
     <button type="submit">Validate</button>
   </form>
