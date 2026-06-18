@@ -3,11 +3,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Validare',
   description: 'Modern form validation. Plugin-based, zero dependencies, TypeScript-first.',
-  base: '/validare-docs/',
+  base: '/',
   ignoreDeadLinks: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/validare-docs/logo.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
   ],
 
   themeConfig: {
