@@ -6,7 +6,12 @@ export default defineConfig({
   base: '/validare-docs/',
   ignoreDeadLinks: true,
 
+  head: [
+    ['link', { rel: 'icon', href: '/validare-docs/logo.svg', type: 'image/svg+xml' }],
+  ],
+
   themeConfig: {
+    logo: '/logo.svg',
     nav: [
       { text: 'Guide',       link: '/guide/getting-started' },
       { text: 'Validators',  link: '/validators/' },
