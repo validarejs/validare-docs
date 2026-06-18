@@ -11,7 +11,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/varantes/validare
+      link: https://github.com/validarejs/validare
 
 features:
   - icon: 🚫
@@ -24,7 +24,7 @@ features:
     title: Plugin-based architecture
     details: Tiny core engine. Add only the plugins your project needs.
   - icon: ✅
-    title: 50 built-in validators
+    title: 51 built-in validators
     details: Core, financial, identity, encoding, device, and more — ready to use.
   - icon: 🎨
     title: CSS framework integrations
@@ -75,17 +75,17 @@ validare(document.getElementById('demo'), {
 ::: code-group
 
 ```bash [npm]
-npm install validare
+npm install @validare/core
 ```
 
 ```bash [pnpm]
-pnpm add validare
+pnpm add @validare/core
 ```
 
 ```bash [yarn]
-yarn add validare
+yarn add @validare/core
 ```
 
 :::
 
-50 validators · 9 plugins · 686 tests passing · MIT license
+51 validators · 17 plugins · 818 tests passing · MIT license

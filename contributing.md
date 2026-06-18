@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/varantes/validare.git
+git clone https://github.com/validarejs/validare.git
 cd validare
 npm install
 ```

@@ -5,11 +5,11 @@
 ::: code-group
 
 ```bash [npm]
-npm install validare
+npm install @validare/core
 ```
 
 ```bash [CDN (UMD)]
-<script src="https://unpkg.com/validare/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@validare/core/dist/index.umd.js"></script>
 ```
 
 :::
@@ -28,7 +28,7 @@ npm install validare
 ```
 
 ```js
-import { validare, Trigger, Message } from 'validare';
+import { validare, Trigger, Message } from '@validare/core';
 
 const fv = validare(document.getElementById('myForm'), {
   fields: {
@@ -63,7 +63,7 @@ document.getElementById('myForm').addEventListener('submit', async (e) => {
 ## CDN Usage
 
 ```html
-<script src="https://unpkg.com/validare/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@validare/core/dist/index.umd.js"></script>
 <script>
   const { validare, Trigger, Message } = Validare;
 
