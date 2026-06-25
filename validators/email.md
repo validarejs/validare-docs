@@ -10,6 +10,7 @@ Validates that a field contains a valid email address.
 
 | Option | Type | Default | Description |
 |---|---|---|---|
+| `multiple` | `boolean` | `false` | Accept a comma- or semicolon-separated list of email addresses |
 | `message` | `string` | locale default | Custom error message |
 
 ## Playground
@@ -51,6 +52,25 @@ validare(document.getElementById('demo'), {
 | `"user"` | No @ symbol |
 | `"@example.com"` | Missing local part |
 
+## Valid values
+
+| Value | Notes |
+|---|---|
+| `"user@example.com"` | Standard email |
+| `"user+tag@sub.example.co.uk"` | Subdomains and tags |
+| `"a@b.com, c@d.com"` | Two addresses with `multiple: true` |
+| `"a@b.com;c@d.com"` | Semicolon separator with `multiple: true` |
+
+## Invalid values
+
+| Value | Reason |
+|---|---|
+| `"user@"` | Missing domain |
+| `"user"` | No @ symbol |
+| `"@example.com"` | Missing local part |
+| `"a@b.com, notanemail"` | One invalid address in the list |
+
 ## Notes
 
 - Empty string (`""`) always returns `valid: true` — validators only run on non-empty values. Combine with `notEmpty` to require a value.
+- With `multiple: true`, all addresses in the list must be valid for the field to pass.

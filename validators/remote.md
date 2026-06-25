@@ -14,6 +14,7 @@ Validates a field by sending its value to a remote server and checking the respo
 | `method` | `"GET" \| "POST"` | `"GET"` | HTTP method |
 | `data` | `Record<string, string>` | `{}` | Additional data to send with the request |
 | `headers` | `Record<string, string>` | `{}` | Additional request headers |
+| `cache` | `boolean` | `false` | Memoize server responses per (url, value) pair — avoids repeated requests for the same value |
 | `message` | `string` | locale default | Custom error message |
 
 ## Playground
@@ -92,3 +93,5 @@ validare(form, {
 - The server must return JSON: `{ "valid": true }` or `{ "valid": false, "message": "..." }`.
 - For GET requests, the field value is appended as a query parameter.
 - Use `Sequence` plugin to avoid sending requests until basic format validators pass.
+- `cache: true` stores results per validator instance — create a new `validare()` instance to reset the cache.
+- The cache key is `url + value`, so different URLs for the same value are cached independently.

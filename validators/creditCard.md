@@ -4,13 +4,36 @@ outline: deep
 
 # `creditCard`
 
-Validates a credit card number using the Luhn checksum algorithm.
+Validates a credit card number using the Luhn checksum algorithm and detects the card network.
 
 ## Options
 
 | Option | Type | Default | Description |
 |---|---|---|---|
 | `message` | `string` | locale default | Custom error message |
+
+## Result `meta`
+
+When valid, the result includes a `meta` object with the detected card type:
+
+```js
+// result from validate()
+{ valid: true, meta: { type: 'visa' } }
+```
+
+| `meta.type` | Network |
+|---|---|
+| `"visa"` | Visa |
+| `"mastercard"` | Mastercard |
+| `"amex"` | American Express |
+| `"discover"` | Discover |
+| `"dinersclub"` | Diners Club |
+| `"jcb"` | JCB |
+| `"maestro"` | Maestro |
+| `"unionpay"` | UnionPay |
+| `"unknown"` | Unrecognised prefix |
+
+Use `meta.type` to display a live card logo while the user types.
 
 ## Playground
 
